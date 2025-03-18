@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -11,17 +13,26 @@
 
     <!-- Header -->
     <header>
-        <button id="menu-btn">☰</button>
-        <span class="header-title">MARKDOWN</span>
-        <span class="separator">|</span>
-        <div class="doc-name-container">
-            <span>Document Name</span>
-            <input type="text" id="doc-name" value="welcome.md">
+        <div class="header-left">
+            <button id="menu-btn">☰</button>
+            <span class="header-title">MARKDOWN</span>
+            <div class="separator"></div>
+            <div class="doc-name-container">
+                <span class="doc-icon">📄</span>
+                <div class="doc-text">
+                    <span>Document Name</span>
+                    <input type="text" id="doc-name" value="welcome.md">
+                </div>
+            </div>
         </div>
-        <button id="delete-doc" class="delete-btn">🗑</button>
-        <button id="save-btn" class="save-btn">💾 Save Changes</button>
-        <button id="toggle-mode" class="toggle-mode">🌙</button>
+        <div class="header-right">
+            <button id="delete-doc" class="delete-btn">🗑</button>
+            <button id="save-btn" class="save-btn">💾 Save Changes</button>
+            <button id="toggle-mode" class="toggle-mode">🌙</button>
+        </div>
     </header>
+    
+    
 
     <!-- Sidebar (Hidden by Default) -->
     <aside id="sidebar">
